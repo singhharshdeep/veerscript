@@ -1,4 +1,4 @@
-import { AvailableTokens } from "./constants/veerScriptTokens";
+import { AvailableTokens } from "../constants/veerScriptTokens";
 import { Token, Tokenizer } from "./types";
 
 export default class TokenizerImpl implements Tokenizer {
@@ -23,7 +23,7 @@ export default class TokenizerImpl implements Tokenizer {
   }
 
   hasMoreTokens(): boolean {
-    if (!this.string) return true;
+    if (!this.string) return false;
 
     return this.cursor < this.string.length;
   }
