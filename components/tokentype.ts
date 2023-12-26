@@ -1,0 +1,9 @@
+enum TokenType {
+  IDENTIFIER,
+  NUMBER,
+  STRING,
+  OPERATOR,
+  SEPARATOR,
+  COMMENT,
+  EOF,
+}
